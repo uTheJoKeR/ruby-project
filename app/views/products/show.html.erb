@@ -1,0 +1,12 @@
+<title>title</title>
+<h1><%= @myproducts.name %></h1>
+
+<div>
+
+<%= form_for([Order.new]) do |form| %>
+<%= hidden_field_tag 'product_id' , @myproducts.id %>
+  <%= hidden_field_tag 'total' , @myproducts.price %>
+    <%= form.submit 'Order' %>
+
+  <%end%>
+</div>
