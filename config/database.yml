@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password: password
-  host: localhost
+  username: vl6ai8vdojft1dts
+  password: etf809ltyj8v1bcy
+  host: i5x1cqhq5xbqtv00.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
 
 development:
   <<: *default
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: simple-shopping_production
-  username: simple-shopping
-  password: <%= ENV['SIMPLE-SHOPPING_DATABASE_PASSWORD'] %>
+  database: e8z2j1c5yf5gw9tj
+  username: vl6ai8vdojft1dts
+  password: etf809ltyj8v1bcy
